@@ -1,0 +1,23 @@
+
+
+<div id="myDIV" style="text-align:center">
+  <h3>PIE CHART</h3>
+</div>
+<br>
+
+
+
+<div style="display: block">
+  <canvas baseChart
+          [chartType]="pieChartType"
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          
+          [colors]="pieChartColors"
+
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>
+
+
+
